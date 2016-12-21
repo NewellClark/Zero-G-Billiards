@@ -26,7 +26,7 @@ namespace Codonbyte.SpaceBilliards.Arena
             MessageWall.AddItem("Death ball pocketed on break! Bad break!", messageLifeInSeconds);
         }
 
-        [SerializeField]
+        [SerializeField] 
         private BadBreakGameState badBreakState;
 
         [SerializeField]
