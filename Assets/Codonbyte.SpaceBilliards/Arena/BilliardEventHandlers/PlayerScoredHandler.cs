@@ -9,8 +9,8 @@ namespace Codonbyte.SpaceBilliards.Arena
 {
     public class PlayerScoredHandler : BilliardEventHandlingScript
     {
-        [SerializeField]
-        private UnifiedTimedStringQueue messageWall;
+		[SerializeField]
+		private UnifiedTimedStringQueue messageWall = null;
 
         [SerializeField]
         private float _messageLifeInSeconds = 3;

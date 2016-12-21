@@ -11,56 +11,58 @@ using System;
 
 namespace Codonbyte.SpaceBilliards.UI
 {
-    public class WindowlessPocketSelector : MonoBehaviour
-    {
-        [SerializeField]
-        private Camera selectionCamera;
+	public class WindowlessPocketSelector : MonoBehaviour
+	{
+#pragma warning disable 649
+		[SerializeField]
+		private Camera selectionCamera;
 
-        [SerializeField]
-        private UnifiedIPocketSet _pockets;
-        private IPocketSet Pockets { get { return _pockets.Result; } }
+		[SerializeField]
+		private UnifiedIPocketSet _pockets;
+		private IPocketSet Pockets { get { return _pockets.Result; } }
 
-        [SerializeField]
-        private float raycastRange = 10;
+		[SerializeField]
+		private CallPocketGameState callPocketState;
+#pragma warning restore 649
 
-        [SerializeField]
-        private CallPocketGameState callPocketState;
+		[SerializeField]
+		private float raycastRange = 10;
 
-        public void ConfirmSelection()
-        {
-            callPocketState.GoToNextState();
-        }
+		public void ConfirmSelection()
+		{
+			callPocketState.GoToNextState();
+		}
 
-        //private IEnumerable<Collider> colliders;
+		//private IEnumerable<Collider> colliders;
 
-        void Start()
-        {
-            //colliders = from pocket in Pockets
-            //            select pocket.GetComponent<Collider>();
-        }
+		void Start()
+		{
+			//colliders = from pocket in Pockets
+			//            select pocket.GetComponent<Collider>();
+		}
 
-        void Update()
-        {
-            if (!Input.GetMouseButton(0)) return;
-            var pocket = RaycastPockets(Input.mousePosition);
-            if (pocket == null) return;
-            foreach (var p in Pockets) p.Selected = false;
-            pocket.Selected = true;
+		void Update()
+		{
+			if (!Input.GetMouseButton(0)) return;
+			var pocket = RaycastPockets(Input.mousePosition);
+			if (pocket == null) return;
+			foreach (var p in Pockets) p.Selected = false;
+			pocket.Selected = true;
 
-            callPocketState.CallPocket(pocket.PocketIndex);
-        }
+			callPocketState.CallPocket(pocket.PocketIndex);
+		}
 
-        private BilliardPocket RaycastPockets(Vector3 screenPoint)
-        {
-            Ray ray = selectionCamera.ScreenPointToRay(screenPoint);
-            foreach (var pocket in Pockets)
-            {
-                var collider = pocket.GetComponent<Collider>();
-                RaycastHit hit;
-                if (collider.Raycast(ray, out hit, raycastRange)) return pocket;
-            }
+		private BilliardPocket RaycastPockets(Vector3 screenPoint)
+		{
+			Ray ray = selectionCamera.ScreenPointToRay(screenPoint);
+			foreach (var pocket in Pockets)
+			{
+				var collider = pocket.GetComponent<Collider>();
+				RaycastHit hit;
+				if (collider.Raycast(ray, out hit, raycastRange)) return pocket;
+			}
 
-            return null;
-        }
-    }
+			return null;
+		}
+	}
 }

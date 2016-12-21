@@ -9,40 +9,42 @@ using Codonbyte.SpaceBilliards.Arena.GamePieces;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
-    [Serializable]
-    public class TakeShotGameState : GameState
-    {
-        public override void OnStateEnter(GameState previous)
-        {
-            StartCoroutine(TakeShotCoRoutine(setShotPowerGameState.NormalizedShotPower));
-        }
+	[Serializable]
+	public class TakeShotGameState : GameState
+	{
+		public override void OnStateEnter(GameState previous)
+		{
+			StartCoroutine(TakeShotCoRoutine(setShotPowerGameState.NormalizedShotPower));
+		}
 
-        public override void OnStateExit()
-        {
-            //if (cueModelExcludingCamera != null) cueModelExcludingCamera.SetActive(true);
-            //StopAllCoroutines();
-        }
+		public override void OnStateExit()
+		{
+			//if (cueModelExcludingCamera != null) cueModelExcludingCamera.SetActive(true);
+			//StopAllCoroutines();
+		}
 
-        private IEnumerator TakeShotCoRoutine(float normalizedShotPower)
-        {
-            yield return new WaitForSeconds(.3f);
+		private IEnumerator TakeShotCoRoutine(float normalizedShotPower)
+		{
+			yield return new WaitForSeconds(.3f);
 
-            bool successful = cue.ApplyImpulseNormalized(normalizedShotPower);
-            if (!successful) Debug.Log("Shot failed for some unknown reason.");
+			bool successful = cue.ApplyImpulseNormalized(normalizedShotPower);
+			if (!successful) Debug.Log("Shot failed for some unknown reason.");
 
-            //yield return new WaitForSeconds(2);
+			//yield return new WaitForSeconds(2);
 
-            StateMachine.Current = nextState;
-        }
+			StateMachine.Current = nextState;
+		}
 
-        [SiblingGameState]
-        [SerializeField]
-        private GameState nextState;
+#pragma warning disable 649
+		[SiblingGameState]
+		[SerializeField]
+		private GameState nextState;
 
-        [SerializeField]
-        private SetShotPowerGameState setShotPowerGameState;
+		[SerializeField]
+		private SetShotPowerGameState setShotPowerGameState;
 
-        [SerializeField]
-        private BilliardCueScript cue;
-    }
+		[SerializeField]
+		private BilliardCueScript cue;
+#pragma warning restore 649
+	}
 }

@@ -27,13 +27,13 @@ namespace Codonbyte.SpaceBilliards.Arena
             turnEndState.SetStartingStateForNextRound(playerScratchedState, NextStatePriority.PlayerScratched);
         }
 
-        [SerializeField]
-        private TurnEndGameState turnEndState;
+		[SerializeField]
+		private TurnEndGameState turnEndState = null;
+
+		[SerializeField]
+		private UnifiedTimedStringQueue messageWall = null;
 
         [SerializeField]
-        private UnifiedTimedStringQueue messageWall;
-
-        [SerializeField]
-        private PlayerScratchedGameState playerScratchedState;
+        private PlayerScratchedGameState playerScratchedState = null;
     }
 }

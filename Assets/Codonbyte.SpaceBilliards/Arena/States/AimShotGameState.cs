@@ -11,7 +11,8 @@ namespace Codonbyte.SpaceBilliards.Arena.States
     [Serializable]
     public class AimShotGameState : GameState
     {
-        [SerializeField]
+#pragma warning disable 649
+		[SerializeField]
         private GameObject submitTrajectoryUIPanel;
 
         [SerializeField]
@@ -21,8 +22,9 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 
         [SerializeField]
         private UnifiedICueRig cueRig;
+#pragma warning restore 649
 
-        public override void OnStateEnter(GameState previous)
+		public override void OnStateEnter(GameState previous)
         {
             cueRig.Result.Activate();
             submitTrajectoryUIPanel.SetActive(true);

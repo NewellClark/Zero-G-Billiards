@@ -12,36 +12,38 @@ using Codonbyte.SpaceBilliards.Arena.GamePieces;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
-    /// <summary>
-    /// Shows the pocket-selection UI to the player who's turn it is. 
-    /// </summary>
-    public class CallPocketGameState : GameState
-    {
-        public override void OnStateEnter(GameState previous)
-        {
-            callPocketUI.SetActive(true);
-        }
+	/// <summary>
+	/// Shows the pocket-selection UI to the player who's turn it is. 
+	/// </summary>
+	public class CallPocketGameState : GameState
+	{
+		public override void OnStateEnter(GameState previous)
+		{
+			callPocketUI.SetActive(true);
+		}
 
-        public override void OnStateExit()
-        {
-            callPocketUI.SetActive(false);
-        }
+		public override void OnStateExit()
+		{
+			callPocketUI.SetActive(false);
+		}
 
-        public void CallPocket(int pocketIndex)
-        {
-            StateMachine.Mode.CalledPocket = pocketIndex;
-        }
+		public void CallPocket(int pocketIndex)
+		{
+			StateMachine.Mode.CalledPocket = pocketIndex;
+		}
 
-        public void GoToNextState()
-        {
-            StateMachine.Current = nextState;
-        }
+		public void GoToNextState()
+		{
+			StateMachine.Current = nextState;
+		}
 
-        [SerializeField]
-        private GameObject callPocketUI;
+#pragma warning disable 649
+		[SerializeField]
+		private GameObject callPocketUI;
 
-        [SerializeField]
-        [SiblingGameState]
-        private GameState nextState;
-    }
+		[SerializeField]
+		[SiblingGameState]
+		private GameState nextState;
+#pragma warning restore 649
+	}
 }

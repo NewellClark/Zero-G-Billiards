@@ -12,13 +12,15 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
     /// </summary>
     internal class BilliardCueScript : MonoBehaviour
     {
-        [SerializeField]
+#pragma warning disable 649
+		[SerializeField]
         private Transform cueBody;
 
         [SerializeField]
         private BilliardBall cueBall;
+#pragma warning restore 649
 
-        [SerializeField]
+		[SerializeField]
         [Tooltip("The maximum amount of momentum that can be imparted on a cue-ball when taking a shot.")]
         [Range(0, 100)]
         private float _maxImpulse = 15f;

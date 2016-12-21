@@ -6,64 +6,67 @@ using Codonbyte.SpaceBilliards.GameLogic;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
-    [Serializable]
-    public partial class StateMachine : MonoBehaviour
-    {
-        [SerializeField]
-        [SiblingGameState]
-        private GameState _current;
-        public void ChangeState(GameState newState)
-        {
-            if (!GameStates.Contains(newState) && newState != null)
-            {
-                throw new InvalidOperationException("You can only set Current property to a GameState instance that is attached to the StateMachine object.");
-            }
+	[Serializable]
+	public partial class StateMachine : MonoBehaviour
+	{
+		[SerializeField]
+		[SiblingGameState]
+		private GameState _current;
+		public void ChangeState(GameState newState)
+		{
+			if (!GameStates.Contains(newState) && newState != null)
+			{
+				throw new InvalidOperationException("You can only set Current property to a GameState instance that is attached to the StateMachine object.");
+			}
 
-            if (!Application.isPlaying)
-            {
-                _current = newState;
-                return;
-            }
+			if (!Application.isPlaying)
+			{
+				_current = newState;
+				return;
+			}
 
-            var previous = _current;
-            if (previous != null) previous.OnStateExit();
-            _current = newState;
-            if (_current != null) _current.OnStateEnter(previous);
-            if (OnCurrentStateChanged != null) OnCurrentStateChanged(this, new StateChangedEventArgs(previous, _current));
-        }
+			var previous = _current;
+			if (previous != null) previous.OnStateExit();
+			_current = newState;
+			if (_current != null) _current.OnStateEnter(previous);
+			if (OnCurrentStateChanged != null) OnCurrentStateChanged(this, new StateChangedEventArgs(previous, _current));
+		}
 
-        [SerializeField]
-        private GameModeHolder modeHolder;
-        public GameMode Mode
-        {
-            get { return modeHolder.Mode; }
-        }
+#pragma warning disable 649
+		[SerializeField]
+		private GameModeHolder modeHolder;
+#pragma warning restore 649
 
-        public GameState Current
-        {
-            get { return _current; }
-            set
-            {
-                ChangeState(value);
-            }
-        }
+		public GameMode Mode
+		{
+			get { return modeHolder.Mode; }
+		}
 
-        public event EventHandler<StateChangedEventArgs> OnCurrentStateChanged;
+		public GameState Current
+		{
+			get { return _current; }
+			set
+			{
+				ChangeState(value);
+			}
+		}
 
-        /// <summary>
-        /// Gets a read-only collection of all the GameStates available to the current GameStateMachine.
-        /// </summary>
-        public ICollection<GameState> GameStates
-        {
-            get
-            {
-                return new List<GameState>(GetComponents<GameState>()).AsReadOnly();
-            }
-        }
+		public event EventHandler<StateChangedEventArgs> OnCurrentStateChanged;
 
-        void Start()
-        {
-            ChangeState(Current);
-        }
-    }
+		/// <summary>
+		/// Gets a read-only collection of all the GameStates available to the current GameStateMachine.
+		/// </summary>
+		public ICollection<GameState> GameStates
+		{
+			get
+			{
+				return new List<GameState>(GetComponents<GameState>()).AsReadOnly();
+			}
+		}
+
+		void Start()
+		{
+			ChangeState(Current);
+		}
+	}
 }

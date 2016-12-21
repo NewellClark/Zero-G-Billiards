@@ -27,8 +27,8 @@ namespace Codonbyte.SpaceBilliards.Arena
             remove { Root.OnGameModeChanged -= value; }
         }
 
-        [SerializeField]
-        private GameModeHolder _root;
+		[SerializeField]
+		private GameModeHolder _root = null;
         internal override GameModeHolder Root
         {
             get { return _root; }

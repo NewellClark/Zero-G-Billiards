@@ -1,7 +1,5 @@
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll.CodeAnalysisLog.xml
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll.lastcodeanalysissucceeded
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Mono.Cecil.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Common.dll
@@ -24,6 +22,7 @@ D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.xml
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Mono.Cecil.xml
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Common.xml
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Zero-G-Billiards.Plugins.csprojResolveAssemblyReference.cache
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.pdb
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll.CodeAnalysisLog.xml
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll.lastcodeanalysissucceeded

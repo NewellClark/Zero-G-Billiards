@@ -6,42 +6,44 @@ using System.ComponentModel;
 
 namespace Codonbyte.SpaceBilliards.Arena.GamePieces
 {
-    [EditorBrowsable(EditorBrowsableState.Never)]
-    internal class CueAimerScript : MonoBehaviour
-    {
-        [SerializeField]
-        private SimpleRayScript _aimerRay;
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	internal class CueAimerScript : MonoBehaviour
+	{
+#pragma warning disable 649
+		[SerializeField]
+		private SimpleRayScript _aimerRay;
 
-        [SerializeField]
-        private BilliardCueScript _cue;
+		[SerializeField]
+		private BilliardCueScript _cue;
+#pragma warning restore 649
 
-        [SerializeField]
-        [Tooltip("The maximum distance that the aimer-ray should project.")]
-        private float _maxDistance = 100;
-        /// <summary>
-        /// Gets or sets the maximum distance the aimer should extend.
-        /// </summary>
-        public float MaxDistance
-        {
-            get { return _maxDistance; }
-            set
-            {
-                _maxDistance = value;
-            }
-        }
+		[SerializeField]
+		[Tooltip("The maximum distance that the aimer-ray should project.")]
+		private float _maxDistance = 100;
+		/// <summary>
+		/// Gets or sets the maximum distance the aimer should extend.
+		/// </summary>
+		public float MaxDistance
+		{
+			get { return _maxDistance; }
+			set
+			{
+				_maxDistance = value;
+			}
+		}
 
-        void Update()
-        {
-            RaycastHit result;
-            Ray ray = new Ray(transform.position, _cue.AimingDirection);
-            if (Physics.Raycast(ray, out result, MaxDistance))
-            {
-                _aimerRay.RayVector = result.point - transform.position;
-            }
-            else
-            {
-                _aimerRay.RayVector = _cue.AimingDirection.normalized * MaxDistance;
-            }
-        }
-    } 
+		void Update()
+		{
+			RaycastHit result;
+			Ray ray = new Ray(transform.position, _cue.AimingDirection);
+			if (Physics.Raycast(ray, out result, MaxDistance))
+			{
+				_aimerRay.RayVector = result.point - transform.position;
+			}
+			else
+			{
+				_aimerRay.RayVector = _cue.AimingDirection.normalized * MaxDistance;
+			}
+		}
+	} 
 }

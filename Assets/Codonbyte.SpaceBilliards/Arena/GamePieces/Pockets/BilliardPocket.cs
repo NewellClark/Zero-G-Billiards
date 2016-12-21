@@ -27,13 +27,15 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
             }
         }
 
-        [SerializeField]
+#pragma warning disable 649
+		[SerializeField]
         private GameObject selectedHalo;
 
         [SerializeField]
         private GameObject unselectedHalo;
+#pragma warning restore 649
 
-        public bool Selected
+		public bool Selected
         {
             get { return selectedHalo.activeSelf; }
 

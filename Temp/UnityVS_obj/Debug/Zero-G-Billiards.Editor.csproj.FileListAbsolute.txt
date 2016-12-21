@@ -1,7 +1,5 @@
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.pdb
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll.CodeAnalysisLog.xml
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll.lastcodeanalysissucceeded
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Mono.Cecil.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\nunit.framework.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
@@ -35,8 +33,6 @@ D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEngine.Network
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEngine.VR.dll
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
-D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEngine.xml
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.xml
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.Advertisements.xml
@@ -73,3 +69,7 @@ D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Ext
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Zero-G-Billiards.Editor.csprojResolveAssemblyReference.cache
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Assembly-CSharp-Editor.dll
 D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_obj\Debug\Assembly-CSharp-Editor.pdb
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll.CodeAnalysisLog.xml
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll.lastcodeanalysissucceeded
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb

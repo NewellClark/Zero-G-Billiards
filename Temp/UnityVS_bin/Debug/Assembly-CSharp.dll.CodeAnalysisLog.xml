@@ -6,7 +6,7 @@
    <Modules>
     <Module Name="assembly-csharp.dll">
      <Messages>
-      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Add an AssemblyVersion attribute to 'Assembly-CSharp.dll'.</Issue>
       </Message>
      </Messages>
@@ -15,28 +15,28 @@
        <Types>
         <Type Name="UnifiedICueRig" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'UnifiedICueRig' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'IUnifiedContainer&lt;ICueRig&gt;'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="UnifiedIPocketSelectionButton" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'UnifiedIPocketSelectionButton' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'IUnifiedContainer&lt;IPocketSelectionButton&gt;'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="UnifiedIPocketSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'UnifiedIPocketSet' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'IUnifiedContainer&lt;IPocketSet&gt;'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="UnifiedTimedStringQueue" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'UnifiedTimedStringQueue' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'IUnifiedContainer&lt;ITimedQueue&lt;string&gt;&gt;'</Issue>
           </Message>
          </Messages>
@@ -49,84 +49,84 @@
          <Members>
           <Member Name="#backMaterials" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.backMaterials' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material[]', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.backMaterials'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ballParent" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.ballParent' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Transform', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.ballParent'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ballPrefab" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.ballPrefab' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.ballPrefab'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#deathBallBackgroundColor" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.deathBallBackgroundColor' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Color', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.deathBallBackgroundColor'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#deathBallBackMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.deathBallBackMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.deathBallBackMaterial'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#deathBallSolidsMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.deathBallSolidsMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.deathBallSolidsMaterial'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#deathBallStripesMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.deathBallStripesMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.deathBallStripesMaterial'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#objectBallBackgroundColors" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.objectBallBackgroundColors' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Color[]', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.objectBallBackgroundColors'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#objectBallBaseBackgroundMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.objectBallBaseBackgroundMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.objectBallBaseBackgroundMaterial'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#pyramid" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.pyramid' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'VerticeTetrahedron', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.pyramid'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#solidsOverlayMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.solidsOverlayMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.solidsOverlayMaterial'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#stripesOverlayMaterial" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BallPyramidCreator.stripesOverlayMaterial' is a member of type 'BallPyramidCreator', which is serializable, but is of type 'Material', which is not serializable. Add the NonSerializedAttribute to 'BallPyramidCreator.stripesOverlayMaterial'.</Issue>
             </Message>
            </Messages>
@@ -141,14 +141,14 @@
          <Members>
           <Member Name="#selectedHalo" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BilliardPocket.selectedHalo' is a member of type 'BilliardPocket', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'BilliardPocket.selectedHalo'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#unselectedHalo" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'BilliardPocket.unselectedHalo' is a member of type 'BilliardPocket', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'BilliardPocket.unselectedHalo'.</Issue>
             </Message>
            </Messages>
@@ -163,7 +163,7 @@
          <Members>
           <Member Name="#submitTrajectoryUIPanel" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'AimShotGameState.submitTrajectoryUIPanel' is a member of type 'AimShotGameState', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'AimShotGameState.submitTrajectoryUIPanel'.</Issue>
             </Message>
            </Messages>
@@ -174,14 +174,14 @@
          <Members>
           <Member Name="#gameModeHolder" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'SetGameModeGameState.gameModeHolder' is a member of type 'SetGameModeGameState', which is serializable, but is of type 'RootGameModeHolder', which is not serializable. Add the NonSerializedAttribute to 'SetGameModeGameState.gameModeHolder'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#setGameModeControl" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'SetGameModeGameState.setGameModeControl' is a member of type 'SetGameModeGameState', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'SetGameModeGameState.setGameModeControl'.</Issue>
             </Message>
            </Messages>
@@ -192,14 +192,14 @@
          <Members>
           <Member Name="#cue" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'SetShotPowerGameState.cue' is a member of type 'SetShotPowerGameState', which is serializable, but is of type 'BilliardCueScript', which is not serializable. Add the NonSerializedAttribute to 'SetShotPowerGameState.cue'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#firingController" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'SetShotPowerGameState.firingController' is a member of type 'SetShotPowerGameState', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'SetShotPowerGameState.firingController'.</Issue>
             </Message>
            </Messages>
@@ -210,7 +210,7 @@
          <Members>
           <Member Name="#modeHolder" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'StateMachine.modeHolder' is a member of type 'StateMachine', which is serializable, but is of type 'GameModeHolder', which is not serializable. Add the NonSerializedAttribute to 'StateMachine.modeHolder'.</Issue>
             </Message>
            </Messages>
@@ -221,7 +221,7 @@
          <Members>
           <Member Name="#cue" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'TakeShotGameState.cue' is a member of type 'TakeShotGameState', which is serializable, but is of type 'BilliardCueScript', which is not serializable. Add the NonSerializedAttribute to 'TakeShotGameState.cue'.</Issue>
             </Message>
            </Messages>
@@ -234,35 +234,35 @@
        <Types>
         <Type Name="BasicGameInfoDisplayerPanel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'BasicGameInfoDisplayerPanel' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="GameOverUI" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'GameOverUI' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="NotificationsWall" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'NotificationsWall' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'TimedQueue&lt;string&gt;'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="PocketSelectionButtonScript" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'PocketSelectionButtonScript' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="PocketSelectionUI" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'PocketSelectionUI' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
@@ -273,21 +273,21 @@
        <Types>
         <Type Name="BorderedClientRegion" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'BorderedClientRegion' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="SliderScaler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'SliderScaler' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'UIBehaviour'</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="TimedStringQueue" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'TimedStringQueue' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'TimedQueue&lt;string&gt;'</Issue>
           </Message>
          </Messages>
@@ -300,7 +300,7 @@
          <Members>
           <Member Name="#ObjectField" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:16Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 10:50:10Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Error">Field 'IUnifiedContainerBase.ObjectField' is a member of type 'IUnifiedContainerBase', which is serializable, but is of type 'Object', which is not serializable. Add the NonSerializedAttribute to 'IUnifiedContainerBase.ObjectField'.</Issue>
             </Message>
            </Messages>

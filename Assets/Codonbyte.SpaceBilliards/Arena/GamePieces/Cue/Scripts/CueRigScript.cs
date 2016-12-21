@@ -38,7 +38,8 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
             set { aimingController.SetActive(value); }
         }
 
-        [SerializeField]
+#pragma warning disable 649
+		[SerializeField]
         private GameObject cueModel;
 
         [SerializeField]
@@ -46,5 +47,6 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
 
         [SerializeField]
         private GameObject aimingController;
-    }
+#pragma warning restore 649
+	}
 }

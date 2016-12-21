@@ -50,7 +50,7 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
         }
 
         [SerializeField]
-        private ExposeCollidersTouchingTrigger ballDetector;
+        private ExposeCollidersTouchingTrigger ballDetector = null;
 
         void LateUpdate()
         {

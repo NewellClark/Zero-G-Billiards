@@ -8,48 +8,49 @@ using Codonbyte.SpaceBilliards.GameLogic;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
-    [Serializable]
-    public class SetGameModeGameState : GameState
-    {
-        public override void OnStateEnter(GameState previous)
-        {
-            if (setGameModeControl == null)
-            {
-                StartTwoPlayerGame();
-                return;
-            }
-            setGameModeControl.SetActive(true);
-        }
+	[Serializable]
+	public class SetGameModeGameState : GameState
+	{
+		public override void OnStateEnter(GameState previous)
+		{
+			if (setGameModeControl == null)
+			{
+				StartTwoPlayerGame();
+				return;
+			}
+			setGameModeControl.SetActive(true);
+		}
 
-        public override void OnStateExit()
-        {
-            if (setGameModeControl == null) return;
-            setGameModeControl.SetActive(false);
-        }
+		public override void OnStateExit()
+		{
+			if (setGameModeControl == null) return;
+			setGameModeControl.SetActive(false);
+		}
 
-        public void StartTwoPlayerGame()
-        {
-            gameModeHolder.StartTwoPlayerGame();
-            StateMachine.Current = nextState;
-        }
+		public void StartTwoPlayerGame()
+		{
+			gameModeHolder.StartTwoPlayerGame();
+			StateMachine.Current = nextState;
+		}
 
-        public void StartOnePlayerGame()
-        {
-            gameModeHolder.StartOnePlayerGame();
-            StateMachine.Current = nextState;
-        }
+		public void StartOnePlayerGame()
+		{
+			gameModeHolder.StartOnePlayerGame();
+			StateMachine.Current = nextState;
+		}
 
-        [Tooltip("Not using this for now, as single player mode has buggy logic. Going to cut straight to 2-player mode.")]
-        [SerializeField]
-        private GameObject setGameModeControl;
+#pragma warning disable 649
+		[Tooltip("Not using this for now, as single player mode has buggy logic. Going to cut straight to 2-player mode.")]
+		[SerializeField]
+		private GameObject setGameModeControl;
 
-        [SerializeField]
-        [SiblingGameState]
-        private GameState nextState;
+		[SerializeField]
+		[SiblingGameState]
+		private GameState nextState;
 
-        
-        [SerializeField]
-        private RootGameModeHolder gameModeHolder;
-        
-    }
+		
+		[SerializeField]
+		private RootGameModeHolder gameModeHolder;
+#pragma warning restore 649
+	}
 }

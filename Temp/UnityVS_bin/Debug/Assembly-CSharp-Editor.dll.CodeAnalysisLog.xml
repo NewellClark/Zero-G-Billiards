@@ -6,7 +6,7 @@
    <Modules>
     <Module Name="assembly-csharp-editor.dll">
      <Messages>
-      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2016-12-21 08:05:20Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2016-12-21 10:50:14Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Add an AssemblyVersion attribute to 'Assembly-CSharp-Editor.dll'.</Issue>
       </Message>
      </Messages>

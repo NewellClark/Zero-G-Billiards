@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics.CodeAnalysis;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -9,10 +10,13 @@ namespace UnityStandardAssets.Utility
 {
     public class AutoMobileShaderSwitch : MonoBehaviour
     {
-        [SerializeField] private ReplacementList m_ReplacementList;
+#pragma warning disable 649
+		[SerializeField]
+		private ReplacementList m_ReplacementList;
+#pragma warning restore 649
 
-        // Use this for initialization
-        private void OnEnable()
+		// Use this for initialization
+		private void OnEnable()
         {
 #if UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_BLACKBERRY
 			var renderers = FindObjectsOfType<Renderer>();

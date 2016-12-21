@@ -11,30 +11,32 @@ using Codonbyte.SpaceBilliards.Arena;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
-    public class BadBreakGameState : GameState
-    {
-        public override void OnStateEnter(GameState previous)
-        {
-            StartCoroutine(EntranceCoRoutine(previous));
-        }
+	public class BadBreakGameState : GameState
+	{
+		public override void OnStateEnter(GameState previous)
+		{
+			StartCoroutine(EntranceCoRoutine(previous));
+		}
 
-        public override void OnStateExit()
-        {
-            
-        }
+		public override void OnStateExit()
+		{
+			
+		}
 
-        private IEnumerator<YieldInstruction> EntranceCoRoutine(GameState previous)
-        {
-            MessageWall.AddItem("Re-break!", restartAfterSeconds);
-            yield return new WaitForSeconds(restartAfterSeconds);
-            Application.LoadLevel(Application.loadedLevel);
-        }
+		private IEnumerator<YieldInstruction> EntranceCoRoutine(GameState previous)
+		{
+			MessageWall.AddItem("Re-break!", restartAfterSeconds);
+			yield return new WaitForSeconds(restartAfterSeconds);
+			Application.LoadLevel(Application.loadedLevel);
+		}
 
-        [SerializeField]
-        private UnifiedTimedStringQueue _messageWall;
-        private ITimedQueue<string> MessageWall { get { return _messageWall.Result; } }
+#pragma warning disable 649
+		[SerializeField]
+		private UnifiedTimedStringQueue _messageWall;
+		private ITimedQueue<string> MessageWall { get { return _messageWall.Result; } }
+#pragma warning restore 649
 
-        [SerializeField]
-        private float restartAfterSeconds = 1;
-    }
+		[SerializeField]
+		private float restartAfterSeconds = 1;
+	}
 }

@@ -8,35 +8,35 @@ using Codonbyte.SpaceBilliards.Arena.States;
 
 namespace Codonbyte.SpaceBilliards.Arena
 {
-    public class BadBreakHandler : BilliardEventHandlingScript
-    {
-        protected override void RegisterBilliardEventHandlers(InitializationData data)
-        {
-            Mode.OnBadBreak += HandleBadBreak;
-        }
+	public class BadBreakHandler : BilliardEventHandlingScript
+	{
+		protected override void RegisterBilliardEventHandlers(InitializationData data)
+		{
+			Mode.OnBadBreak += HandleBadBreak;
+		}
 
-        protected override void UnregisterBilliardEventHandlers(InitializationData data)
-        {
-            Mode.OnBadBreak -= HandleBadBreak;
-        }
+		protected override void UnregisterBilliardEventHandlers(InitializationData data)
+		{
+			Mode.OnBadBreak -= HandleBadBreak;
+		}
 
-        private void HandleBadBreak(object sender, BilliardPlayEventArgs e)
-        {
-            turnEndState.SetStartingStateForNextRound(badBreakState, NextStatePriority.BadBreak);
-            MessageWall.AddItem("Death ball pocketed on break! Bad break!", messageLifeInSeconds);
-        }
+		private void HandleBadBreak(object sender, BilliardPlayEventArgs e)
+		{
+			turnEndState.SetStartingStateForNextRound(badBreakState, NextStatePriority.BadBreak);
+			MessageWall.AddItem("Death ball pocketed on break! Bad break!", messageLifeInSeconds);
+		}
 
-        [SerializeField] 
-        private BadBreakGameState badBreakState;
+		[SerializeField]
+		private BadBreakGameState badBreakState = null;
 
-        [SerializeField]
-        private TurnEndGameState turnEndState;
+		[SerializeField]
+		private TurnEndGameState turnEndState = null;
 
-        [SerializeField]
-        private UnifiedTimedStringQueue _messageWall;
-        private ITimedQueue<string> MessageWall { get { return _messageWall.Result; } }
+		[SerializeField]
+		private UnifiedTimedStringQueue _messageWall = null;
+		private ITimedQueue<string> MessageWall { get { return _messageWall.Result; } }
 
-        [SerializeField]
-        private float messageLifeInSeconds = 8;
-    }
+		[SerializeField]
+		private float messageLifeInSeconds = 8;
+	}
 }

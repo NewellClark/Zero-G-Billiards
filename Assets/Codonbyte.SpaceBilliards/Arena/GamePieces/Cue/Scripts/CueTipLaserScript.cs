@@ -8,10 +8,12 @@ namespace Codonbyte.SpaceBilliards.Arena.GamePieces
     [ExecuteInEditMode]
     internal class CueTipLaserScript : MonoBehaviour
     {
-        [SerializeField]
+#pragma warning disable 649
+		[SerializeField]
         private SimpleRayScript _laserBeam;
+#pragma warning restore 649
 
-        [SerializeField]
+		[SerializeField]
         private float _laserRange = 1;
 
         void Update()
