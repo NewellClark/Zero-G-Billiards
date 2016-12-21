@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="D:\LocalRepositories\Zero-G-Billiards\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll">
+   <Modules>
+    <Module Name="assembly-csharp-firstpass.dll">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Add an AssemblyVersion attribute to 'Assembly-CSharp-firstpass.dll'.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="UnityStandardAssets.Utility">
+       <Types>
+        <Type Name="AutoMobileShaderSwitch+ReplacementDefinition" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#original" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'AutoMobileShaderSwitch.ReplacementDefinition.original' is a member of type 'AutoMobileShaderSwitch.ReplacementDefinition', which is serializable, but is of type 'Shader', which is not serializable. Add the NonSerializedAttribute to 'AutoMobileShaderSwitch.ReplacementDefinition.original'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#replacement" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'AutoMobileShaderSwitch.ReplacementDefinition.replacement' is a member of type 'AutoMobileShaderSwitch.ReplacementDefinition', which is serializable, but is of type 'Shader', which is not serializable. Add the NonSerializedAttribute to 'AutoMobileShaderSwitch.ReplacementDefinition.replacement'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AutoMoveAndRotate+Vector3andSpace" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#value" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'AutoMoveAndRotate.Vector3andSpace.value' is a member of type 'AutoMoveAndRotate.Vector3andSpace', which is serializable, but is of type 'Vector3', which is not serializable. Add the NonSerializedAttribute to 'AutoMoveAndRotate.Vector3andSpace.value'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CurveControlledBob" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Bobcurve" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'CurveControlledBob.Bobcurve' is a member of type 'CurveControlledBob', which is serializable, but is of type 'AnimationCurve', which is not serializable. Add the NonSerializedAttribute to 'CurveControlledBob.Bobcurve'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_OriginalCameraPosition" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'CurveControlledBob.m_OriginalCameraPosition' is a member of type 'CurveControlledBob', which is serializable, but is of type 'Vector3', which is not serializable. Add the NonSerializedAttribute to 'CurveControlledBob.m_OriginalCameraPosition'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FOVKick" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Camera" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'FOVKick.Camera' is a member of type 'FOVKick', which is serializable, but is of type 'Camera', which is not serializable. Add the NonSerializedAttribute to 'FOVKick.Camera'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IncreaseCurve" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'FOVKick.IncreaseCurve' is a member of type 'FOVKick', which is serializable, but is of type 'AnimationCurve', which is not serializable. Add the NonSerializedAttribute to 'FOVKick.IncreaseCurve'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TimedObjectActivator+Entry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#target" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'TimedObjectActivator.Entry.target' is a member of type 'TimedObjectActivator.Entry', which is serializable, but is of type 'GameObject', which is not serializable. Add the NonSerializedAttribute to 'TimedObjectActivator.Entry.target'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WaypointCircuit+WaypointList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#circuit" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'WaypointCircuit.WaypointList.circuit' is a member of type 'WaypointCircuit.WaypointList', which is serializable, but is of type 'WaypointCircuit', which is not serializable. Add the NonSerializedAttribute to 'WaypointCircuit.WaypointList.circuit'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#items" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235" Status="Active" Created="2016-12-21 08:05:11Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error">Field 'WaypointCircuit.WaypointList.items' is a member of type 'WaypointCircuit.WaypointList', which is serializable, but is of type 'Transform[]', which is not serializable. Add the NonSerializedAttribute to 'WaypointCircuit.WaypointList.items'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MarkAllNonSerializableFields" Category="Microsoft.Usage" CheckId="CA2235">
+   <Name>Mark all non-serializable fields</Name>
+   <Description>All fields that cannot be serialized directly should have the NonSerializedAttribute. Types that have the SerializableAttribute should not have fields of types that do not have the SerializableAttribute unless the fields are marked with the NonSerializedAttribute.</Description>
+   <Resolution Name="Default">Field {0} is a member of type {1}, which is serializable, but is of type {2}, which is not serializable. Add the NonSerializedAttribute to {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182349.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016">
+   <Name>Mark assemblies with AssemblyVersionAttribute</Name>
+   <Description>Assemblies should use version numbers. The version number is considered part of an assembly's identity. Versioning is applied by means of the AssemblyVersion attribute.</Description>
+   <Resolution Name="Default">Add an AssemblyVersion attribute to {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182155.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

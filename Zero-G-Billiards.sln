@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G-Billiards.Plugins", "Zero-G-Billiards.Plugins.csproj", "{7A49CDBC-A77E-B13E-E3F1-6785300DED4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G-Billiards", "Zero-G-Billiards.csproj", "{51BB095F-B891-0AC1-6527-BEB797DCCB13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G-Billiards.Editor", "Zero-G-Billiards.Editor.csproj", "{C6B1FDD0-1C21-1E84-EF81-848AA72CB620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A49CDBC-A77E-B13E-E3F1-6785300DED4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A49CDBC-A77E-B13E-E3F1-6785300DED4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A49CDBC-A77E-B13E-E3F1-6785300DED4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A49CDBC-A77E-B13E-E3F1-6785300DED4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BB095F-B891-0AC1-6527-BEB797DCCB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BB095F-B891-0AC1-6527-BEB797DCCB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BB095F-B891-0AC1-6527-BEB797DCCB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BB095F-B891-0AC1-6527-BEB797DCCB13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B1FDD0-1C21-1E84-EF81-848AA72CB620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B1FDD0-1C21-1E84-EF81-848AA72CB620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B1FDD0-1C21-1E84-EF81-848AA72CB620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B1FDD0-1C21-1E84-EF81-848AA72CB620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
