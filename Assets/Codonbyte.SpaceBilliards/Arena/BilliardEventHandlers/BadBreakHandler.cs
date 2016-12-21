@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using Codonbyte.Development;
 using Codonbyte.SpaceBilliards.GameLogic;
-using Codonbyte.SpaceBilliards;
+using Codonbyte.SpaceBilliards; 
 using Codonbyte.SpaceBilliards.Arena.States;
 
 namespace Codonbyte.SpaceBilliards.Arena
