@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 59f8e825be15a974d9b2b9be085f3d54
+timeCreated: 1448401816
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - ballPrefab: {fileID: 150042, guid: 88a3a9e91794e9d4d9e7984300e37841, type: 2}
+  - objectBallBaseBackgroundMaterial: {fileID: 2100000, guid: c57f4d685fcb5684a83ef294d9c27edf,
+      type: 2}
+  - solidsOverlayMaterial: {fileID: 2100000, guid: fa2c95bf00e9e0d4da0732d550805e80,
+      type: 2}
+  - stripesOverlayMaterial: {fileID: 2100000, guid: e478afb70791ced4b8443b8530c9900d,
+      type: 2}
+  - deathBallSolidsMaterial: {fileID: 2100000, guid: e00a13538839dbc4f8436c644fb8fbb6,
+      type: 2}
+  - deathBallStripesMaterial: {fileID: 2100000, guid: 6840d52d8d06dea4ab6fd20e61e72b12,
+      type: 2}
+  - ballParent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G Billiards.CSharp.Plugins", "Zero-G Billiards.CSharp.Plugins.csproj", "{AC23D084-0A6D-05E1-FDF3-3BEEB9F5BB16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G Billiards.CSharp", "Zero-G Billiards.CSharp.csproj", "{FE144247-FF66-067F-E565-02EFDDFDE279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-G Billiards.CSharp.Editor", "Zero-G Billiards.CSharp.Editor.csproj", "{F88E0277-6ADC-156B-EBF9-8858F355AE0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC23D084-0A6D-05E1-FDF3-3BEEB9F5BB16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC23D084-0A6D-05E1-FDF3-3BEEB9F5BB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC23D084-0A6D-05E1-FDF3-3BEEB9F5BB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC23D084-0A6D-05E1-FDF3-3BEEB9F5BB16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE144247-FF66-067F-E565-02EFDDFDE279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE144247-FF66-067F-E565-02EFDDFDE279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE144247-FF66-067F-E565-02EFDDFDE279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE144247-FF66-067F-E565-02EFDDFDE279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88E0277-6ADC-156B-EBF9-8858F355AE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88E0277-6ADC-156B-EBF9-8858F355AE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88E0277-6ADC-156B-EBF9-8858F355AE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88E0277-6ADC-156B-EBF9-8858F355AE0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

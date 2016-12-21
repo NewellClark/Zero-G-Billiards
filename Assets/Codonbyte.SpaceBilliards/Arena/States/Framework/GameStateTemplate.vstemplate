@@ -1,0 +1,60 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Zero G Billiards Game State.CSharp.cs</DefaultName>
+    <Name>Zero G Billiards Game State.CSharp</Name>
+    <Description>A single Game State for a State Machine in Zero-G Billiards</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>mscorlib</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.XML</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Core</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Boo.Lang</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityScript.Lang</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Runtime.Serialization</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Xml.Linq</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine.UI</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine.Networking</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEditor</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Mono.Cecil</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEditor.iOS.Extensions.Xcode</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Zero-G Billiards.CSharp.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">GameStateTemplate.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
