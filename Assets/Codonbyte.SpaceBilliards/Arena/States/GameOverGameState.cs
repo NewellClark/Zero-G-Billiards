@@ -8,6 +8,7 @@ using Codonbyte.Development;
 using Codonbyte.SpaceBilliards;
 using Codonbyte.SpaceBilliards.GameLogic;
 using Codonbyte.SpaceBilliards.Arena;
+using UnityEngine.SceneManagement;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
@@ -58,7 +59,8 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 
 		public void NewGame()
 		{
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}
 
 	}

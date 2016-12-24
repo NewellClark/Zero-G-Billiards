@@ -8,6 +8,7 @@ using Codonbyte.Development;
 using Codonbyte.SpaceBilliards;
 using Codonbyte.SpaceBilliards.GameLogic;
 using Codonbyte.SpaceBilliards.Arena;
+using UnityEngine.SceneManagement;
 
 namespace Codonbyte.SpaceBilliards.Arena.States
 {
@@ -27,7 +28,8 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 		{
 			MessageWall.AddItem("Re-break!", restartAfterSeconds);
 			yield return new WaitForSeconds(restartAfterSeconds);
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}
 
 #pragma warning disable 649

@@ -28,8 +28,8 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 
 		private GameState previous;
 #pragma warning disable 649
-		[SerializeField]
-		private BilliardCueScript cue;
+		//[SerializeField]
+		//private BilliardCueScript cue;
 
 		[SerializeField]
 		private UnifiedICueRig cueRig;

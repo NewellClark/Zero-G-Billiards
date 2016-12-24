@@ -1,0 +1,186 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_0
+-define:UNITY_5_5
+-define:UNITY_5
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_ANDROID
+-define:ENABLE_SUBSTANCE
+-define:UNITY_ANDROID_API
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:CROSS_PLATFORM_INPUT
+-define:MOBILE_INPUT
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/BadBreakHandler.cs
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/DisablePocketedBalls.cs
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/Framework/BilliardEventHandlingScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/GameOverHandler.cs
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/PlayerScoredHandler.cs
+Assets/Codonbyte.SpaceBilliards/Arena/BilliardEventHandlers/PlayerScratchedHandler.cs
+Assets/Codonbyte.SpaceBilliards/Arena/Framework/AliasGameModeHolder.cs
+Assets/Codonbyte.SpaceBilliards/Arena/Framework/GameModeHolder.cs
+Assets/Codonbyte.SpaceBilliards/Arena/Framework/RootGameModeHolder.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Balls/BallPlacerScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Balls/BallPyramidCreator.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Balls/CueBallCreator.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Balls/Tetrahedrons.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Cue/Scripts/BilliardCueScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Cue/Scripts/CueAimerScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Cue/Scripts/CueRigScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Cue/Scripts/CueTipLaserScript.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Pockets/BilliardPocket.cs
+Assets/Codonbyte.SpaceBilliards/Arena/GamePieces/Pockets/PocketSet.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/AimShotGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/BadBreakGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/CallPocketGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/Framework/GameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/Framework/GameStateTemplate.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/Framework/SiblingGameStateAttribute.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/Framework/StateMachine.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/Framework/StateMachineGameStateFactories.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/GameOverGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/PlayerScratchedGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/SetGameModeGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/SetShotPowerGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/StandbyGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/TakeShotGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/TurnEndGameState.cs
+Assets/Codonbyte.SpaceBilliards/Arena/States/WaitForBallsToSettleGameState.cs
+Assets/Codonbyte.SpaceBilliards/BilliardBall.cs
+Assets/Codonbyte.SpaceBilliards/Cosmos/ActivateISSLightsOnOrbitalSunset.cs
+Assets/Codonbyte.SpaceBilliards/Cosmos/RotateSkyboxWithAxisSpin.cs
+Assets/Codonbyte.SpaceBilliards/Cosmos/SpinOnAxis.cs
+Assets/Codonbyte.SpaceBilliards/Debugging/EliminateNonDeathBalls.cs
+Assets/Codonbyte.SpaceBilliards/Debugging/PocketDeathBallOnBreak.cs
+Assets/Codonbyte.SpaceBilliards/Debugging/ScratchAndThenPocketDeathBall.cs
+Assets/Codonbyte.SpaceBilliards/Framework/Interfaces.cs
+Assets/Codonbyte.SpaceBilliards/Framework/UnifiedContainers.cs
+Assets/Codonbyte.SpaceBilliards/GameLogic/GameMode.cs
+Assets/Codonbyte.SpaceBilliards/GameLogic/IBallPocketedNotifier.cs
+"Assets/Codonbyte.SpaceBilliards/Resources/Menus/Main Menu/MainMenuController.cs"
+Assets/Codonbyte.SpaceBilliards/UI/ControlListener.cs
+Assets/Codonbyte.SpaceBilliards/UI/CrossPlatformControlListener.cs
+Assets/Codonbyte.SpaceBilliards/UI/Debugging/DrawCurrentGameState.cs
+Assets/Codonbyte.SpaceBilliards/UI/Debugging/DrawCurrentShotPowerSliderValue.cs
+Assets/Codonbyte.SpaceBilliards/UI/Debugging/ShowGameStateChanges.cs
+Assets/Codonbyte.SpaceBilliards/UI/Hud/GameOverUI.cs
+Assets/Codonbyte.SpaceBilliards/UI/Hud/NotificationsWall.cs
+"Assets/Codonbyte.SpaceBilliards/UI/Pocket Selection/PocketSelectionButtonScript.cs"
+"Assets/Codonbyte.SpaceBilliards/UI/Pocket Selection/PocketSelectionUI.cs"
+"Assets/Codonbyte.SpaceBilliards/UI/Pocket Selection/Windowless/WindowlessPocketSelector.cs"
+Assets/Codonbyte.SpaceBilliards/UI/Shots/BasicGameInfoDisplayerPanel.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/CueController.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/CueFiringController.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/MobileCueControlScript.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/MobileTouchCueAimerVariableSpeed.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/PlaceCueBallAfterScratchControllerScript.cs
+Assets/Codonbyte.SpaceBilliards/UI/Shots/SetShotPowerPanelHelper.cs
+Assets/IUnified/CollectionExtensions.cs
+Assets/IUnified/IUnifiedContainer.cs
+Assets/IUnified/IUnifiedContainers.cs
+Assets/TransformRendering/Scripts/ComponentWiseVectorGizmo.cs
+Assets/TransformRendering/Scripts/HybridVectorGizmo.cs
+Assets/TransformRendering/Scripts/IVectorGizmo.cs
+"Assets/TransformRendering/Scripts/Morphing Scripts/AddScaleBySinWave.cs"
+"Assets/TransformRendering/Scripts/Morphing Scripts/RigidBodyRandomRotationAtStart.cs"
+Assets/TransformRendering/Scripts/Obsolete/ObsoleteVectorGizmo.cs
+Assets/TransformRendering/Scripts/VectorGizmo.cs
+"Assets/Utilities/Line Rendering/Scripts/SimpleCrosshairsScript.cs"
+"Assets/Utilities/Line Rendering/Scripts/SimpleLineScript.cs"
+"Assets/Utilities/Line Rendering/Scripts/SimpleRayScript.cs"
+"Assets/Utilities/Misc Helpers/AngleAxis.cs"
+"Assets/Utilities/Misc Helpers/Editor Helpers.cs"
+"Assets/Utilities/Misc Helpers/ExposeCollidersTouchingTrigger.cs"
+"Assets/Utilities/Misc Helpers/ITimedQueue.cs"
+"Assets/Utilities/Misc Helpers/Lazy.cs"
+"Assets/Utilities/Misc Helpers/MathHelpers.cs"
+"Assets/Utilities/Misc Helpers/PhysicsExtensions.cs"
+"Assets/Utilities/Misc Helpers/PropertyChangedEventArgs.cs"
+"Assets/Utilities/Misc Helpers/TimedQueue.cs"
+Assets/Utilities/Scripts/ComponentAutoscaler.cs
+Assets/Utilities/Scripts/LightAutoscaler.cs
+Assets/Utilities/Scripts/Movement/EnableDisableObjectAsIfChild.cs
+Assets/Utilities/Scripts/Movement/FollowTargetObject.cs
+Assets/Utilities/Scripts/Movement/MirrorRotationOfTarget.cs
+Assets/Utilities/Scripts/Movement/TransformHelpers.cs
+Assets/Utilities/UI/BorderedClientRegion.cs
+Assets/Utilities/UI/SliderScaler.cs
+Assets/Utilities/UI/TimedStringQueue.cs
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

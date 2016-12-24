@@ -48,11 +48,12 @@ namespace Codonbyte.SpaceBilliards.Arena.Balls
 		[SerializeField]
 		private Material stripesOverlayMaterial;
 
-		[SerializeField]
-		private Material deathBallSolidsMaterial;
+		//	Not using these for now.
+		//[SerializeField]
+		//private Material deathBallSolidsMaterial;
 
-		[SerializeField]
-		private Material deathBallStripesMaterial;
+		//[SerializeField]
+		//private Material deathBallStripesMaterial;
 
 		[SerializeField]
 		private bool randomizeBallOrientation = true;
