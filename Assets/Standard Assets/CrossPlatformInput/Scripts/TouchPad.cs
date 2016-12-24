@@ -32,21 +32,23 @@ namespace UnityStandardAssets.CrossPlatformInput
 		public float Xsensitivity = 1f;
 		public float Ysensitivity = 1f;
 
-		Vector3 m_StartPos;
-		Vector2 m_PreviousDelta;
-		Vector3 m_JoytickOutput;
+		//Vector3 m_StartPos;
+		//Vector2 m_PreviousDelta;
+		//Vector3 m_JoytickOutput;
 		bool m_UseX; // Toggle for using the x axis
 		bool m_UseY; // Toggle for using the Y axis
 		CrossPlatformInputManager.VirtualAxis m_HorizontalVirtualAxis; // Reference to the joystick in the cross platform input
 		CrossPlatformInputManager.VirtualAxis m_VerticalVirtualAxis; // Reference to the joystick in the cross platform input
 		bool m_Dragging;
 		int m_Id = -1;
+#if !UNITY_EDITOR
 		Vector2 m_PreviousTouchPos; // swipe style control touch
+#endif
 
 
 #if !UNITY_EDITOR
-    private Vector3 m_Center;
-    private Image m_Image;
+	private Vector3 m_Center;
+	private Image m_Image;
 #else
 		Vector3 m_PreviousMouse;
 #endif
@@ -56,13 +58,13 @@ namespace UnityStandardAssets.CrossPlatformInput
 			CreateVirtualAxes();
 		}
 
-        void Start()
-        {
+		void Start()
+		{
 #if !UNITY_EDITOR
-            m_Image = GetComponent<Image>();
-            m_Center = m_Image.transform.position;
+			m_Image = GetComponent<Image>();
+			m_Center = m_Image.transform.position;
 #endif
-        }
+		}
 
 		void CreateVirtualAxes()
 		{
@@ -103,8 +105,8 @@ namespace UnityStandardAssets.CrossPlatformInput
 			m_Dragging = true;
 			m_Id = data.pointerId;
 #if !UNITY_EDITOR
-        if (controlStyle != ControlStyle.Absolute )
-            m_Center = data.position;
+		if (controlStyle != ControlStyle.Absolute )
+			m_Center = data.position;
 #endif
 		}
 
@@ -118,14 +120,14 @@ namespace UnityStandardAssets.CrossPlatformInput
 			{
 #if !UNITY_EDITOR
 
-            if (controlStyle == ControlStyle.Swipe)
-            {
-                m_Center = m_PreviousTouchPos;
-                m_PreviousTouchPos = Input.touches[m_Id].position;
-            }
-            Vector2 pointerDelta = new Vector2(Input.touches[m_Id].position.x - m_Center.x , Input.touches[m_Id].position.y - m_Center.y).normalized;
-            pointerDelta.x *= Xsensitivity;
-            pointerDelta.y *= Ysensitivity;
+			if (controlStyle == ControlStyle.Swipe)
+			{
+				m_Center = m_PreviousTouchPos;
+				m_PreviousTouchPos = Input.touches[m_Id].position;
+			}
+			Vector2 pointerDelta = new Vector2(Input.touches[m_Id].position.x - m_Center.x , Input.touches[m_Id].position.y - m_Center.y).normalized;
+			pointerDelta.x *= Xsensitivity;
+			pointerDelta.y *= Ysensitivity;
 #else
 				Vector2 pointerDelta;
 				pointerDelta.x = Input.mousePosition.x - m_PreviousMouse.x;

@@ -18,11 +18,10 @@ namespace UnityStandardAssets.Cameras
 		// on a moving spaceship with a limited angular range)
 
 		// to have no constraints on an axis, set the rotationRange greater than 360.
-
-		[SerializeField]
-		private Vector2 m_RotationRange = Vector2.one;
-		[SerializeField]
-		private float m_FollowSpeed = 1;
+#pragma warning disable 649
+		[SerializeField] private Vector2 m_RotationRange;
+#pragma warning restore 649
+		[SerializeField] private float m_FollowSpeed = 1;
 
 		private Vector3 m_FollowAngles;
 		private Quaternion m_OriginalRotation;
