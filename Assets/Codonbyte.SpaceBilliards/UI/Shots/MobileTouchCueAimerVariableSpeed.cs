@@ -8,102 +8,106 @@ using Codonbyte.SpaceBilliards.Arena.GamePieces;
 using Codonbyte.Development.TransformRendering;
 
 public class MobileTouchCueAimerVariableSpeed : MonoBehaviour {
-    [SerializeField]
-    private BilliardCueScript cue;
+#pragma warning disable 649
+	[SerializeField]
+	private BilliardCueScript cue;
 
-    [SerializeField]
-    private Collider raycastTarget;
+	[SerializeField]
+	private Collider raycastTarget;
 
-    [SerializeField]
-    private Camera shotCam;
-    /*
-    [SerializeField]
-    private float minSpeed = .01f;
+	[SerializeField]
+	private Camera shotCam;
 
-    [SerializeField]
-    private float maxSpeed = 2f;
+	[SerializeField]
+	private AnimationCurve powerCurve;
 
-    [SerializeField]
-    private float minTargetRadius = .1f;*/
+	[SerializeField]
+	private VectorGizmo aimingArrow;
+#pragma warning restore 649
 
-    [SerializeField]
-    [Range(0, .3f)]
-    private float targetRadius = .2f;
+	/*
+	[SerializeField]
+	private float minSpeed = .01f;
 
-    [SerializeField]
-    private AnimationCurve powerCurve;
+	[SerializeField]
+	private float maxSpeed = 2f;
 
-    [SerializeField]
-    private float raycastRange = 10;
+	[SerializeField]
+	private float minTargetRadius = .1f;*/
 
-    [SerializeField]
-    private Vector3 horizontalDirection = Vector3.right;
+	[SerializeField]
+	[Range(0, .3f)]
+	private float targetRadius = .2f;
 
-    [SerializeField]
-    private Vector3 verticalDirection = Vector3.up;
+	[SerializeField]
+	private float raycastRange = 10;
 
-    [SerializeField]
-    private VectorGizmo aimingArrow;
+	[SerializeField]
+	private Vector3 horizontalDirection = Vector3.right;
 
-    private void ResetAimingArrow()
-    {
-        if (aimingArrow == null) return;
-        aimingArrow.Value = Vector3.zero;
-    }
+	[SerializeField]
+	private Vector3 verticalDirection = Vector3.up;
 
-    void Update()
-    {
-        if (!Input.GetMouseButton(0))
-        {
-            ResetAimingArrow();
-            return;
-        }
-        var tangent = TryGetTangent(Input.mousePosition);
-        if (tangent == null)
-        {
-            ResetAimingArrow();
-            return;
-        }
-        //RotateCueByTangent(tangent.Value);
-        RotateCueByTangentUsingCurve(tangent.Value);
-    }
 
-    void OnValidate()
-    {
-        raycastTarget.transform.localScale = new Vector3(
-            targetRadius * 2, raycastTarget.transform.localScale.y, targetRadius * 2);
-    }
+	private void ResetAimingArrow()
+	{
+		if (aimingArrow == null) return;
+		aimingArrow.Value = Vector3.zero;
+	}
 
-    private Vector2? TryGetTangent(Vector3 screenPoint)
-    {
-        Ray ray = shotCam.ScreenPointToRay(screenPoint);
-        RaycastHit hit;
-        if (!raycastTarget.Raycast(ray, out hit, raycastRange)) return null;
+	void Update()
+	{
+		if (!Input.GetMouseButton(0))
+		{
+			ResetAimingArrow();
+			return;
+		}
+		var tangent = TryGetTangent(Input.mousePosition);
+		if (tangent == null)
+		{
+			ResetAimingArrow();
+			return;
+		}
+		//RotateCueByTangent(tangent.Value);
+		RotateCueByTangentUsingCurve(tangent.Value);
+	}
 
-        var offset = cue.transform.InverseTransformPoint(hit.point);
-        if (aimingArrow != null) aimingArrow.Value = offset;
-        Vector2 tangent = new Vector2(
-            offset.ScalarProjection(horizontalDirection),
-            offset.ScalarProjection(verticalDirection));
+	void OnValidate()
+	{
+		raycastTarget.transform.localScale = new Vector3(
+			targetRadius * 2, raycastTarget.transform.localScale.y, targetRadius * 2);
+	}
 
-        return tangent;
-    }
+	private Vector2? TryGetTangent(Vector3 screenPoint)
+	{
+		Ray ray = shotCam.ScreenPointToRay(screenPoint);
+		RaycastHit hit;
+		if (!raycastTarget.Raycast(ray, out hit, raycastRange)) return null;
 
-    /*
-    private void RotateCueByTangent(Vector2 tangent)
-    {
-        float distanceMag = Mathf.Clamp(tangent.magnitude, minTargetRadius, targetRadius);
-        float normalizedMag = (distanceMag - minTargetRadius) / (targetRadius - minTargetRadius);
-        float speed = minSpeed + (maxSpeed - minSpeed) * normalizedMag;
-        Vector2 rotate = tangent.normalized * speed * Time.deltaTime;
-        cue.RotateAroundCueBall(rotate);
-    }*/
+		var offset = cue.transform.InverseTransformPoint(hit.point);
+		if (aimingArrow != null) aimingArrow.Value = offset;
+		Vector2 tangent = new Vector2(
+			offset.ScalarProjection(horizontalDirection),
+			offset.ScalarProjection(verticalDirection));
 
-    private void RotateCueByTangentUsingCurve(Vector2 tangent)
-    {
-        float normalizedRadius = tangent.magnitude / targetRadius;
-        float speed = powerCurve.Evaluate(normalizedRadius);
-        Vector2 rotate = tangent.normalized * speed * Time.deltaTime;
-        cue.RotateAroundCueBall(rotate);
-    }
+		return tangent;
+	}
+
+	/*
+	private void RotateCueByTangent(Vector2 tangent)
+	{
+		float distanceMag = Mathf.Clamp(tangent.magnitude, minTargetRadius, targetRadius);
+		float normalizedMag = (distanceMag - minTargetRadius) / (targetRadius - minTargetRadius);
+		float speed = minSpeed + (maxSpeed - minSpeed) * normalizedMag;
+		Vector2 rotate = tangent.normalized * speed * Time.deltaTime;
+		cue.RotateAroundCueBall(rotate);
+	}*/
+
+	private void RotateCueByTangentUsingCurve(Vector2 tangent)
+	{
+		float normalizedRadius = tangent.magnitude / targetRadius;
+		float speed = powerCurve.Evaluate(normalizedRadius);
+		Vector2 rotate = tangent.normalized * speed * Time.deltaTime;
+		cue.RotateAroundCueBall(rotate);
+	}
 }

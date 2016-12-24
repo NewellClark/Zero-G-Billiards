@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Testing Area.unity
+- path: Assets/Codonbyte.SpaceBilliards/Scenes/Game Space Backdrop.unity
   isLoaded: 1
   isActive: 1
