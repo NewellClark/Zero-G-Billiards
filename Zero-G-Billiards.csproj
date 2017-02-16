@@ -138,6 +138,7 @@
     <Compile Include="Assets\Codonbyte.SpaceBilliards\Debugging\EliminateNonDeathBalls.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\Debugging\PocketDeathBallOnBreak.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\Debugging\ScratchAndThenPocketDeathBall.cs" />
+    <Compile Include="Assets\Codonbyte.SpaceBilliards\Framework\EnumerableExtensions.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\Framework\Interfaces.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\Framework\UnifiedContainers.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\GameLogic\GameMode.cs" />

@@ -125,6 +125,7 @@ Assets/Codonbyte.SpaceBilliards/Cosmos/SpinOnAxis.cs
 Assets/Codonbyte.SpaceBilliards/Debugging/EliminateNonDeathBalls.cs
 Assets/Codonbyte.SpaceBilliards/Debugging/PocketDeathBallOnBreak.cs
 Assets/Codonbyte.SpaceBilliards/Debugging/ScratchAndThenPocketDeathBall.cs
+Assets/Codonbyte.SpaceBilliards/Framework/EnumerableExtensions.cs
 Assets/Codonbyte.SpaceBilliards/Framework/Interfaces.cs
 Assets/Codonbyte.SpaceBilliards/Framework/UnifiedContainers.cs
 Assets/Codonbyte.SpaceBilliards/GameLogic/GameMode.cs

@@ -36,17 +36,6 @@ namespace Codonbyte.SpaceBilliards.UI
 		[SerializeField]
 		private string verticalAxis = "Vertical";
 
-
-		/*
-		[SerializeField]
-		[Range(0, 1)]
-		private float normalMoveSpeed = 1;*/
-
-		/*
-		[SerializeField]
-		[Range(0, 1)]
-		private float fineTuneMoveSpeed = .05f;*/
-
 		[SerializeField]
 		[Range(0, 10)]
 		private float raycastRange = 1f;
