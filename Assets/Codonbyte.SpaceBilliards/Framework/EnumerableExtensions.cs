@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace Codonbyte.SpaceBilliards.Framework
-{
+namespace Codonbyte.SpaceBilliards
+{ 
 	public static class EnumerableExtensions
 	{
 		public static Vector3 Average(this IEnumerable<Vector3> @this)
@@ -21,6 +21,11 @@ namespace Codonbyte.SpaceBilliards.Framework
 			return new Vector2(
 				@this.Select(x => x.x).Average(),
 				@this.Select(x => x.y).Average());
+		}
+
+		public static Vector3 ToVector3(this Vector2 @this)
+		{
+			return new Vector3(@this.x, @this.y);
 		}
 	}
 }
