@@ -154,7 +154,7 @@
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\Hud\GameOverUI.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\Hud\NotificationsWall.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\MobileInput\DragToAimController.cs" />
-    <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\MobileInput\TouchStreams.cs" />
+    <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\MobileInput\TouchHelpers.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\Pocket Selection\PocketSelectionButtonScript.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\Pocket Selection\PocketSelectionUI.cs" />
     <Compile Include="Assets\Codonbyte.SpaceBilliards\UI\Pocket Selection\Windowless\WindowlessPocketSelector.cs" />

@@ -20,12 +20,17 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 			var stream = Observable.EveryUpdate()
 				.Select(_ => Input.touches)
 				.Where(x => x.Length == 1)
-				.Select(x => RotateUsingCrossProduct(_camera, _objectToRotate, x.Single()));
+				//.Select(x => RotateUsingTouch(_camera, _objectToRotate, x.Single()));
+				.Select(x => x.Single())
+				.Select(x => TouchHelpers.GetTargetDirectionForDragRotation(
+					_camera, _objectToRotate, x.position, x.position - x.deltaPosition))
+				.Select(x => Quaternion.FromToRotation(_objectToRotate.transform.forward, x))
+				;
 
 			stream.Subscribe(StreamAction);
 		}
 
-		private static Quaternion RotateUsingCrossProduct(Camera camera, Transform rotatee, Touch touch)
+		private static Quaternion RotateUsingTouch(Camera camera, Transform rotatee, Touch touch)
 		{
 			Vector3 forward = rotatee.forward;
 			Vector3 screenTarget = camera.WorldToScreenPoint(forward + camera.transform.position) +
