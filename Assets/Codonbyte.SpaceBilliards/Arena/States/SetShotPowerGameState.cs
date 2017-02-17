@@ -15,6 +15,7 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 		{
 			this.previous = previous;
 			firingController.SetActive(true);
+			aimingController.SetActive(false);
 			//cueModelExcludingCamera.SetActive(true);
 			cueRig.Result.FollowCueBall = cueRig.Result.ModelVisible = true;
 		}
@@ -22,6 +23,7 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 		public override void OnStateExit()
 		{
 			firingController.SetActive(false);
+			aimingController.SetActive(true);
 			//cueModelExcludingCamera.SetActive(false);
 			cueRig.Result.FollowCueBall = cueRig.Result.ModelVisible = false;
 		}
@@ -37,6 +39,9 @@ namespace Codonbyte.SpaceBilliards.Arena.States
 
 		[SerializeField]
 		private GameObject firingController;
+
+		[SerializeField]
+		private GameObject aimingController;
 
 		[SiblingGameState]
 		[SerializeField]

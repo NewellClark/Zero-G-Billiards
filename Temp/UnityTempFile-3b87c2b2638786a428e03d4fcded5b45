@@ -139,6 +139,7 @@ Assets/Codonbyte.SpaceBilliards/UI/Debugging/ShowGameStateChanges.cs
 Assets/Codonbyte.SpaceBilliards/UI/Hud/GameOverUI.cs
 Assets/Codonbyte.SpaceBilliards/UI/Hud/NotificationsWall.cs
 Assets/Codonbyte.SpaceBilliards/UI/MobileInput/DragToAimController.cs
+Assets/Codonbyte.SpaceBilliards/UI/MobileInput/PinchToZoomController.cs
 Assets/Codonbyte.SpaceBilliards/UI/MobileInput/TouchHelpers.cs
 "Assets/Codonbyte.SpaceBilliards/UI/Pocket Selection/PocketSelectionButtonScript.cs"
 "Assets/Codonbyte.SpaceBilliards/UI/Pocket Selection/PocketSelectionUI.cs"
