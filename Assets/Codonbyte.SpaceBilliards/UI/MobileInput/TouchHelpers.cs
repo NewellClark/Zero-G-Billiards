@@ -14,13 +14,6 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 			Vector3 currentScreenPosition,
 			Vector3 previousScreenPosition)
 		{
-			//Vector3 forward = rotatee.forward;
-			//Vector3 screenTarget = camera.WorldToScreenPoint(forward + camera.transform.position) +
-			//	touch.deltaPosition.ToVector3();
-			//Vector3 target = camera.ScreenPointToRay(screenTarget).direction;
-
-			//return Quaternion.FromToRotation(forward, target);
-
 			Vector3 forward = rotatee.forward;
 			Vector3 screenTarget = camera.WorldToScreenPoint(forward + camera.transform.position) +
 				currentScreenPosition - previousScreenPosition;
