@@ -15,6 +15,9 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 		[SerializeField]
 		private Transform _objectToRotate;
 
+		[SerializeField]
+		private float _sensitivityFactor = 1;
+
 		private void Start()
 		{
 			var stream = Observable.EveryUpdate()
@@ -22,7 +25,9 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 				.Where(x => x.Length == 1)
 				.Select(x => x.Single())
 				.Select(x => TouchHelpers.GetTargetDirectionForDragRotation(
-					_camera, _objectToRotate, x.position, x.position - x.deltaPosition))
+					_camera, _objectToRotate, 
+					x.position, 
+					x.position - x.deltaPosition * _sensitivityFactor))
 				.Select(x => Quaternion.FromToRotation(_objectToRotate.transform.forward, x))
 				;
 
