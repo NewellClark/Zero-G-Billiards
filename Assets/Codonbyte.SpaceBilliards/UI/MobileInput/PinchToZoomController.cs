@@ -22,6 +22,8 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 
 		private void HandleStream(float value)
 		{
+			if (!gameObject.activeInHierarchy)
+				return;
 			_cameraRig.localPosition += Vector3.forward * value / _pixelsPerUnit;
 		}
 	}

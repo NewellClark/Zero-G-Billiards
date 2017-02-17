@@ -43,7 +43,6 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 					Previous = (x[0].position - x[0].deltaPosition) - (x[1].position - x[1].deltaPosition)
 				})
 				.Select(x => x.Current.magnitude - x.Previous.magnitude)
-				.Select(x => -x)
 				;
 		}
 

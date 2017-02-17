@@ -31,6 +31,8 @@ namespace Codonbyte.SpaceBilliards.UI.MobileInput
 
 		private void StreamAction(Quaternion rotation)
 		{
+			if (!gameObject.activeInHierarchy)
+				return;
 			_objectToRotate.rotation = rotation * _objectToRotate.rotation;
 		}
 
